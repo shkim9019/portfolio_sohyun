@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Yeon+Sung&display=swap');
+
+
+body{
+  font-family: 'Nanum Pen Script';
+  background-color: azure;
+  min-height: 100vh;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width : 1000px){
+  .App{
+    width: 65vw;
+  }
+}
+
+@media (max-width : 1000px){
+  .App{
+    width: 100vw;
+  }
+}
+
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+#root {
+  background-color: white;
+  box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+
+/*헤더*/
+.Header{
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  
+  margin: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  border: 1px solid rgb(201, 221, 247);
+  border-radius: 40px;
+  
+  /* position: fixed; */
+}
+
+.home_img_wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 40%;
+  cursor: pointer;
+  margin:0px;
+  padding: 15px;
+}
+
+.home_img_wrapper img{
+  width: 40px;
+  height: 100%;
+}
+
+.home_img_wrapper h2{
+  padding-left:10px;
+  font-family: 'Jua';
+}
+
+.nav_list{
+  width: 80%;
+  height: 100%;
+  
+  margin-right: 0px;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 0px; 
+  text-align: right;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  align-content: center;
+}
+
+.nav_list li{
+  display: inline;
+  padding: 15px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav_list li:hover{
+  color: rgb(84, 130, 196);
+  font-weight: bold;
+}
+
+/* About */
+.About{
+  margin:10px;
+  height: calc(100% - 80px);
+
+  display: flex;
+}
+
+.About .introMe, .About .rightInfo{
+  height: calc(100% - 20px);  
+  width: 40%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.About .introMe img{
+  width: 100%;
+  height: 100%;  
+}
+
+.About .introMe div{
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
+
+}
+
+.About .rightInfo{
+  width: 60%;
+}
+
+.About .rightInfo .rightTop{
+  height: calc(100% - 250px);
+  margin: 10px;
+  font-family: 'Jua';
+  font-size: 25px;
+}
+
+.About .rightTop p{
+  padding-top:20px;
+  font-family: 'Nanum Pen Script';
+  font-size: 25px;
+  text-align: justify;
+}
+
+.About .rightInfo .rightBottom{
+  line-height: 50px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.About .rightBottom ul{
+  list-style: '🔎';
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.About .rightBottom li{
+  width: 50%;
+  text-align: left;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.About .rightBottom span{
+  font-size: 25px;
+  font-weight: bold;
+}

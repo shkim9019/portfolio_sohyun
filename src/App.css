@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Yeon+Sung&display=swap');
+
+
+body{
+  font-family: 'Nanum Pen Script';
+  background-color: azure;
+  min-height: 100vh;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  /* 스크롤 기능 없애기 
+  overflow: hidden;*/
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+@media (min-width : 1000px){
+  .App{
+    width: 65vw;
+  }
+
+  .Header{
+    width: calc(65vw - 20px);
+  }
+}
+
+@media (max-width : 1000px){
+  .App{
+    width: 100vw;
+  }
+
+  .Header{
+    width: calc(100vw - 20px);
+  }
+}
+
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+#root {
+  background-color: white;
+  box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+
+/*헤더*/
+.Header{
+  height: 50px;
+  text-align: center;
+  
+  position: fixed;
+  margin:10px;
+
+  display: flex;
+  align-items: center;
+  
+  border: 1px solid rgb(201, 221, 247);
+  border-radius: 40px;
+  background-color: white;
+}
+
+.home_img_wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* max-width: 40%; */
+  margin:0px;
+  padding: 15px;
+
+  cursor: pointer;
+}
+
+.home_img_wrapper img{
+  width: 40px;
+  height: 100%;
+}
+
+.home_img_wrapper h2{
+  padding-left:10px;
+  font-family: 'Jua';
+}
+
+.nav_list{
+  width: 80%;
+  /* height: 100%; */
+  
+  margin-right: 0px;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 0px; 
+  text-align: right;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  align-content: center;
+}
+
+.nav_list li{
+  display: inline;
+  padding: 15px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav_list li:hover{
+  color: rgb(84, 130, 196);
+  font-weight: bold;
+}
+
+/* About */
+.About{
+  margin:0px;
+  /* height: calc(100% - 60px); */
+  height: 100vh;
+
+  display: flex;
+}
+
+.About .intro{
+  margin: 60px;
+  display: flex;
+}
+
+.About .leftInfo, .About .rightInfo{
+  /* height: calc(100% - 80px);   */
+  height: 100%;
+  width: 40%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.About .leftInfo img{
+  width: 100%;
+  height: 100%;  
+}
+
+.About .leftInfo div{
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
+
+}
+
+.About .rightInfo{
+  width: 60%;
+}
+
+.About .rightInfo .rightTop{
+  height: calc(100% - 250px);
+  margin: 10px;
+  font-family: 'Jua';
+  font-size: 25px;
+}
+
+.About .rightTop p{
+  padding-top:20px;
+  font-family: 'Nanum Pen Script';
+  font-size: 25px;
+  text-align: justify;
+}
+
+.About .rightInfo .rightBottom{
+  line-height: 50px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.About .rightBottom ul{
+  list-style: '🔎';
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.About .rightBottom li{
+  width: 50%;
+  text-align: left;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.About .rightBottom span{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Skill */
+.Skill{
+  margin: 60px;
+  padding-top: 60px;
+  height: calc(100vh - 120px);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.Skill h1{
+  margin-left: 20px;
+  text-align: left;
+}
+
+.Skill .expInfo{
+  margin-left:60px;
+  text-align: left;
+}
+
+.Skill .expInfo button{
+  background-color: rgb(228, 245, 245);
+  border:hidden;
+  border-radius: 10px;
+
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.Skill .expInfo span{
+  font-family: 'Jua';
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 25px;
+}
+
+.Skill .expInfo h2{
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 20px;
+  display: flex;
+}
+
+.Skill .expInfo h2 >span{
+  font-size: 18px;
+  color: gray;
+}
+
+.Skill .expInfo p{
+  padding:10px 0px 10px 30px;
+  font-size: 15px;
+  font-family: 'Nanum Gothic Coding';
+  line-height: 1.5em;
+}
+
+.Skill .skillInfo{
+  /* margin:20px 40px 0px 40px; */
+  margin-left: 60px;
+  display: flex;
+  gap: 60px;
+}
+
+.Skill .skillInfo img{
+  width: 120px;
+  height: 100px;
+  /* margin: 10px;
+  padding: 10px; */
+}
+
+.Skill .skillInfo .banner_img{
+  display:inline-block;
+  position: relative;
+}
+
+.banner_img:hover:after,
+.banner_img:hover > .hover_text,
+.banner_img:hover > .hover_text2{
+  display: block;
+}
+
+.banner_img:after, .hover_text, .hover_text2{
+  display:none;
+}
+
+/* .banner_img:after{
+  content:'';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+} */
+.banner_img {
+  overflow: hidden;
+}
+.banner_img img{
+  height: 340px;
+}
+.banner_img:hover img{
+  transform: scale(1.2);
+  transition: 1s;
+  opacity: 0.5;
+}
+.hover_text, .hover_text2 {
+  position: absolute;
+  top: 10px;
+  left: 35px;
+  color: rgb(19, 7, 133);
+  z-index: 20;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: 'Nanum Gothic Coding';
+}
+
+.hover_text2{
+  left:20px;
+  font-size: 25px;
+}
+
+.Skill .skillLic{
+  display: flex;
+  margin-left: 60px;
+  gap: 40px;
+}
+.Skill .skillLic button{
+  width: 150px;
+  height: 40px;
+
+  background-color: rgb(228, 245, 245);
+  border: hidden;
+
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  vertical-align: middle;
+
+}
