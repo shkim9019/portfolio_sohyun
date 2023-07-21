@@ -1,6 +1,6 @@
 import React  from 'react';
 
-const Header = ({onPageMove}) => {
+const Header = ({onPageMove, click}) => {
     return (
         <header className="Header">
             <div className="home_img_wrapper" onClick={()=>onPageMove('home')}>
@@ -9,10 +9,22 @@ const Header = ({onPageMove}) => {
             </div>
             <div className="nav_list">
                 <ul>
-                    <li onClick={() =>onPageMove('about')}>자기소개</li>
-                    <li onClick={() =>onPageMove('skill')}>경력기술</li>
-                    <li onClick={() =>onPageMove('project')}>프로젝트</li>
-                    <li onClick={() =>onPageMove('etc')}>기타</li>
+                    <li onClick={() =>onPageMove('about')}
+                        className={click==="about"?"click":""}
+                    >
+                        자기소개
+                    </li>
+                    <li onClick={() =>onPageMove('skill')}
+                        className={click==="skill"?"click":""}
+                    >
+                        경력기술
+                    </li>
+                    <li onClick={() =>onPageMove('project')}
+                        className={click==="project"?"click":""}
+                    >
+                        프로젝트
+                    </li>
+                    <li onClick={() =>onPageMove('gitHub')}>깃허브</li>
                 </ul>
             </div>            
         </header>

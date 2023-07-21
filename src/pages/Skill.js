@@ -8,7 +8,7 @@ const expList = [
     endDt:new Date(2020,4).toLocaleDateString().slice(0,7),
     name:'Java 웹 개발자 양성과정 교육 이수',
     position:'쌍용 강북 교육센터',
-    info:'JAVA 기반으로 웹 프로그래밍 개발 기술을 교육받았으며, 이를 토대로 3차례의 팀 프로젝트를 진행하였습니다. ',
+    info:'JAVA 기반으로 웹 프로그래밍 개발 기술을 교육받았으며, 이를 토대로 3차례의 팀 프로젝트를 진행하였습니다.',
   },
   {
     key:"work1",
